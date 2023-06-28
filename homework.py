@@ -61,7 +61,7 @@ def test_random_list():
         x = random.randint(1, 100)
         l.append(x)
     l.sort()
-
+    print(l)
     assert len(l) == 10
     assert l[0] < l[-1]
 
@@ -92,6 +92,6 @@ def test_dicts():
     second = [1, 2, 3, 4, 5]
     # TODO создайте словарь
     d = dict(zip(first, second))
-
+    print(d)
     assert isinstance(d, dict)
     assert len(d) == 5
