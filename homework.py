@@ -1,4 +1,4 @@
-import math
+from math import pi
 import random
 
 def test_greeting():
@@ -57,7 +57,7 @@ def test_random_list():
 
     # TODO создайте список
     l = []
-    for i in range(1, 10):
+    for i in range(0, 10):
         x = random.randint(1, 100)
         l.append(x)
     l.sort()
@@ -91,7 +91,7 @@ def test_dicts():
     first = ["a", "b", "c", "d", "e"]
     second = [1, 2, 3, 4, 5]
     # TODO создайте словарь
-    d = {}
+    d = dict(zip(first, second))
 
     assert isinstance(d, dict)
     assert len(d) == 5
